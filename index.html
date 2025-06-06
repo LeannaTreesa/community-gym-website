@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Summit Fitness Center</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="nav-logo">The Ivy Fitness Leauge</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="#trainers" class="nav-link">Trainers</a></li>
+                <li class="nav-item"><a href="#equipment" class="nav-link">Equipment</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h1>Welcome Back, Izel!</h1>
+            <div class="dashboard-grid">
+                <!-- Gym Status Widget -->
+                <div class="widget status-widget">
+                    <h3>Gym Status</h3>
+                    <p class="occupancy-label">Currently in the Gym:</p>
+                    <p class="occupancy-count" id="occupancy-number">8</p>
+                    <div class="occupancy-bar">
+                        <div id="occupancy-level" style="width: 40%;"></div>
+                    </div>
+                    <p class="capacity">/ 20 Max Capacity</p>
+                </div>
+
+                <!-- Quick Actions Widget -->
+                <div class="widget actions-widget">
+                    <h3>Quick Actions</h3>
+                    <button class="btn btn-primary" id="checkin-btn"><i class="fas fa-right-to-bracket"></i> Check In</button>
+                    <button class="btn btn-secondary"><i class="fas fa-plus"></i> Log a Workout</button>
+                </div>
+                
+                <!-- Recent Activity Widget -->
+                <div class="widget activity-widget">
+                    <h3>My Recent Activity</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-calendar-check green"></i></td>
+                            <td>Checked In</td>
+                            <td>Today, 8:02 AM</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-dumbbell blue"></i></td>
+                            <td>Logged "Upper Body"</td>
+                            <td>Yesterday, 6:30 PM</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-person-running orange"></i></td>
+                            <td>Logged "Cardio"</td>
+                            <td>Mon, 9:15 AM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trainers Section -->
+        <section id="trainers">
+            <h2>Meet Our Trainers</h2>
+            <p class="section-subtitle">Certified professionals available to help you reach your goals.</p>
+            <div class="trainer-grid">
+                <div class="trainer-card">
+                    <img src="https://picsum.photos/seed/trainer1/200/200" alt="Sarah Johnson">
+                    <h3>Shijo Jacob</h3>
+                    <p>Strength & Conditioning</p>
+                    <a href="#" class="btn btn-secondary">Book a Session</a>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://picsum.photos/seed/trainer2/200/200" alt="Mike Lee">
+                    <h3>Linta Jose</h3>
+                    <p>Yoga & Flexibility</p>
+                    <a href="#" class="btn btn-secondary">Book a Session</a>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://picsum.photos/seed/trainer3/200/200" alt="Emily Chen">
+                    <h3>Ethan Jacob</h3>
+                    <p>Cardio & HIIT</p>
+                    <a href="#" class="btn btn-secondary">Book a Session</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Tutorials Section -->
+        <section id="equipment">
+            <h2>Equipment Tutorials</h2>
+            <p class="section-subtitle">Learn how to use our machines safely and effectively.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card" data-video-id="https://www.youtube.com/watch?v=VFk3RzndUEc" data-title="Treadmill">
+                    <i class="fas fa-person-running"></i>
+                    <h4>Treadmill</h4>
+                </div>
+                <div class="equipment-card" data-video-id="Gk4_vD_pgkM" data-title="Leg Press">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>Leg Press</h4>
+                </div>
+                <div class="equipment-card" data-video-id="u3dwe5f4g5g" data-title="Cable Machine">
+                    <i class="fas fa-gear"></i>
+                    <h4>Cable Machine</h4>
+                </div>
+                 <div class="equipment-card" data-video-id="s19EV_p0i8Y" data-title="Lat Pulldown">
+                    <i class="fas fa-weight-hanging"></i>
+                    <h4>Lat Pulldown</h4>
+                </div>
+                 <div class="equipment-card" data-video-id="GHc_d7V1p2A" data-title="Rowing Machine">
+                    <i class="fas fa-water"></i>
+                    <h4>Rowing Machine</h4>
+                </div>
+                 <div class="equipment-card" data-video-id="meXo-d_0g2c" data-title="Dumbbells">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>Dumbbell Basics</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Tutorial Modal -->
+    <div id="tutorial-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h3 id="modal-title">Machine Tutorial</h3>
+            <div class="video-container">
+                <iframe id="modal-video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="modal-instructions">
+                <strong>Instructions:</strong> Always start with a light weight to check your form. Ensure the seat and pads are adjusted to your body before beginning.
+            </p>
+        </div>
+    </div>
+    
+  </main>
+
+    <!-- ... (your modal code is here) ... -->
+
+    <footer class="footer">
+        <p>© 2025 Ivy League Apartments. BY LEANNA.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
